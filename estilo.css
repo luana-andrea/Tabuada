@@ -1,6 +1,9 @@
 body {
     background-color: rgb(132, 132, 233);
     font: normal 15pt Arial;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 header {
@@ -12,10 +15,20 @@ section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 90px;
+    width: 90%;
     max-width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    box-sizing: border-box;
+}
+
+input, select {
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    margin-top: 10px;
 }
 
 footer {
@@ -31,17 +44,18 @@ footer {
     }
 
     section {
-        width: 95%;
-        padding: 15px;
-        box-sizing: border-box;
+        width: 100%;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     input[type="number"],
-    input[type="button"],
-    select {
+    input[type="button"] {
         width: 100%;
-        margin-top: 8px;
-        font-size: 16px;
         box-sizing: border-box;
     }
 
